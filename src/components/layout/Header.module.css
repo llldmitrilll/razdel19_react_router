@@ -1,0 +1,33 @@
+.header {
+   background: orange;
+   margin-bottom: 30px;
+}
+
+.headerContainer {
+   max-width: 1120px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px 15px;
+}
+
+.headerList {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   font-weight: 700;
+   color: yellow;
+}
+
+.headerLinkActive {
+   color: rgb(254, 224, 79);
+   border-bottom: 2px solid rgb(254, 224, 79);
+}
+
+.headerList li:not(:last-child) {
+   margin-right: 25px;
+}
+
+.headerWorksQuantity {
+   color: rgb(185, 48, 48);
+}

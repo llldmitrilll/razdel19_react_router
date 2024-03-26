@@ -1,0 +1,39 @@
+.workBody {
+   font-size: 28px;
+   padding: 25px 35px;
+   background: rgb(150, 189, 8);
+   margin-bottom: 20px;
+   border-radius: 20px;
+   box-shadow: 3px 3px 11px 0px rgba(50, 100, 50, 0.8);
+}
+
+.workBody :not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.workRow {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.workTitle,
+.workTime {
+   font-weight: 700;
+}
+
+
+.workDescription {
+   font-size: 22px;
+}
+
+.workButton {
+   padding: 5px 20px;
+   background: rgb(248, 237, 141);
+   border-radius: 10px;
+   transition: 0.3s;
+}
+
+.workButton:hover {
+   background: rgb(223, 202, 17);
+}
