@@ -10,7 +10,7 @@ const Header = () => {
             <nav>
                <ul className={style.headerList}>
                   <li>
-                     <NavLink to='/works' activeClassName={style.headerLinkActive}>
+                     <NavLink to='/works-list' activeClassName={style.headerLinkActive}>
                         Works <span className={style.headerWorksQuantity}>{worksQuantity}</span></NavLink>
                   </li>
                   <li>

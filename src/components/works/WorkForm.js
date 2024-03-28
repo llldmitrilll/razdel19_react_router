@@ -27,7 +27,7 @@ const WorkForm = () => {
       }
       ))
 
-      histoty.push('/works');
+      histoty.push('/works-list');
    }
 
    const focusFormHandler = () => {

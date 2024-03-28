@@ -96,4 +96,14 @@ h6 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
+}
+
+.button-center {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  padding: 10px;
+  background: rgb(245, 239, 156);
+  border-radius: 5px;
 }

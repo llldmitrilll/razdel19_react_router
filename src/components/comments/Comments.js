@@ -1,6 +1,8 @@
+import Card from "../UI/Card";
+
 const Comments = () => {
    return (
-      <h1>Comments</h1>
+      <Card>Comments</Card>
    );
 };
 

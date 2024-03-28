@@ -13,13 +13,13 @@ function App() {
       <Layout>
         <Switch>
           <Route path='/' exact>
-            <Redirect to='/works' />
+            <Redirect to='/works-list' />
           </Route>
-          <Route path='/works' exact>
+          <Route path='/works-list' exact>
             {/* <WorksList /> */}
             <Works />
           </Route>
-          <Route path='/works/:workId'>
+          <Route path='/works-list/:workId'>
             <WorkDetail />
           </Route>
           <Route path='/add-work'>

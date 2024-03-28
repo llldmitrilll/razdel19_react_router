@@ -14,14 +14,14 @@ const initialState = {
          description: 'Work_2 description',
          time: '0:15'
       },
-      // {
-      //    id: '3',
-      //    title: 'Work_3 title',
-      //    description: 'Work_3 description',
-      //    time: '2:15'
-      // }
+      {
+         id: '3',
+         title: 'Work_3 title',
+         description: 'Work_3 description',
+         time: '2:15'
+      }
    ],
-   worksQuantity: 2
+   worksQuantity: 3
 
 }
 

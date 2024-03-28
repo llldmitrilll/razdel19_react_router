@@ -1,17 +1,17 @@
 import { Fragment } from "react";
-import { useParams, Route } from "react-router-dom/cjs/react-router-dom";
+import { useParams, Route, useRouteMatch } from "react-router-dom/cjs/react-router-dom";
 import Comments from "../components/comments/Comments";
 import { useSelector } from "react-redux";
 import HighlightedWork from "../components/works/HighlightedWork";
 import Card from "../components/UI/Card";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const WorkDetail = () => {
    const params = useParams();
+   const routeMatch = useRouteMatch()
    const worksArray = useSelector(state => state.works.worksArray);
    const work = worksArray.find(work => work.id === params.workId);
-   console.log(params);
-   console.log(worksArray);
-   console.log(work);
+   console.log(routeMatch);
    return (
       <Fragment>
          {work
@@ -27,7 +27,12 @@ const WorkDetail = () => {
             description={work.description}
             time={work.time} />}
          {!work && <Card>Work is not found</Card>} */}
-         <Route path='/works/:workId/comments'>
+         <Route path={`${routeMatch.path}`} exact>
+            <div className="button-center">
+               <Link to={`${routeMatch.url}/comments`}>Show comments</Link>
+            </div>
+         </Route>
+         <Route path={`${routeMatch.path}/comments`}>
             <Comments />
          </Route>
       </Fragment>
