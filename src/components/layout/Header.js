@@ -3,7 +3,9 @@ import style from "./Header.module.css";
 import { useSelector } from "react-redux";
 
 const Header = () => {
+
    const worksQuantity = useSelector(state => state.works.worksQuantity)
+
    return (
       <header className={style.header}>
          <div className={style.headerContainer}>

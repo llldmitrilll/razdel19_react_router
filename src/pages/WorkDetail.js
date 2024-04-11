@@ -11,7 +11,8 @@ const WorkDetail = () => {
    const routeMatch = useRouteMatch()
    const worksArray = useSelector(state => state.works.worksArray);
    const work = worksArray.find(work => work.id === params.workId);
-   console.log(routeMatch);
+   // console.log(worksArray);
+   // console.log(work);
    return (
       <Fragment>
          {work
@@ -27,9 +28,10 @@ const WorkDetail = () => {
             description={work.description}
             time={work.time} />}
          {!work && <Card>Work is not found</Card>} */}
+
          <Route path={`${routeMatch.path}`} exact>
             <div className="button-center">
-               <Link to={`${routeMatch.url}/comments`}>Show comments</Link>
+               <Link className='button-center' to={`${routeMatch.url}/comments`}>Show comments</Link>
             </div>
          </Route>
          <Route path={`${routeMatch.path}/comments`}>

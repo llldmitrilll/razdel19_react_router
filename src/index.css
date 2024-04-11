@@ -100,10 +100,21 @@ code {
 }
 
 .button-center {
-  text-align: center;
-  margin: 0 auto;
+  margin: 5px auto;
+  display: flex;
   width: 200px;
-  padding: 10px;
+  justify-content: center;
+  padding: 10px 0;
+  background: rgb(245, 239, 156);
+  border-radius: 5px;
+}
+
+.button-left {
+  margin: 10px 0;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  padding: 10px 0;
   background: rgb(245, 239, 156);
   border-radius: 5px;
 }

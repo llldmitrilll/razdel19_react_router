@@ -34,6 +34,14 @@
    transition: 0.3s;
 }
 
-.workButton:hover {
+.workButtonDel {
+   padding: 5px 20px;
+   background: rgb(248, 237, 141);
+   border-radius: 10px;
+   transition: 0.3s;
+}
+
+.workButton:hover,
+.workButtonDel:hover {
    background: rgb(223, 202, 17);
 }
